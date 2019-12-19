@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <title>Artworks</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <img alt="artist logo" class="logo" src="Images/funsmall.png">
+        </a>
+
+
+        <!--DROPDOWN MENU-->
+        <div class="kunst">
+            <a href="#">Kunst</a>
+        </div>
+        <div class="dropdown">
+            <div class="arrow-down"></div>
+            <div class="dropdown-nav">
+            </div>
+        </div>
+
+        <!--BURGER MENU-->
+        <div id="menuArea">
+            <input type="checkbox" id="menuToggle"></input>
+
+            <label for="menuToggle" class="menuOpen">
+                <div class="open"></div>
+            </label>
+
+            <div class="menu menuEffects">
+                <label for="menuToggle"></label>
+                <div class="menuContent">
+                    <ul>
+                        <li><a href="kunst.html">Kunst</a></li>
+                        <li><a href="om.html">Om</a></li>
+                        <li><a href="udstillinger.html">Udstillinger</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--GRID AREA-->
+ 
+    <section id="artworks">
+        <template class="artworkTemplate">
+            <article>
+                <div class="hover01 column">
+                    <div>
+                       <center> 
+                        <figure>
+                            <img alt="art image" class="artImage">
+                        </figure>
+                        </center>
+                    </div>
+                </div>
+            </article>
+        </template>
+    </section>
+   
+
+    <!--MODAL AREA-->
+    <div class="modal-bg hide">
+        <div class="modal-content">
+            <a href="#" class="close"></a>
+            <img alt="modal image" class="modal-image">
+            <div class="modaltext"> 
+            <p class="modal-title"><span></span>,</p>
+            <p class="modal-year"><span></span>,</p>
+            <p class="modal-size"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <center>
+            <a href="https://www.facebook.com/kristian.devantier" class="fa fa-facebook"></a>
+            <a href="https://www.google.com/search?safe=off&sxsrf=ACYBGNTdBE99cRucEj3rsS5IZDrfrk51RQ%3A1576527759336&source=hp&ei=j-f3Xey3EsGyrgTqloXwCA&q=kristian+devantier&oq=kr&gs_l=psy-ab.3.0.35i199i175i39j35i322i39j35i39j0i322i67l3j0j0i199i175j0i199i291j0i322.854.1627..2611...1.0..1.710.1779.1j3-1j0j1j1....3..0....1..gws-wiz.Gay2wu5yVBY" class="fa fa-google"></a>
+            <a href="https://www.instagram.com/kristiandevantier/" class="fa fa-instagram"></a>
+        </center>
+        <p class="copy">&copy; Kristian Devantier 2019
+        </p>
+    </footer>
+
+</body>
+
+</html>
